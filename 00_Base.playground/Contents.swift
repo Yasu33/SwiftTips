@@ -504,3 +504,47 @@ let randomInt = Int.random(in: 1...5)
 let randomDouble = Double.random(in: 1...100)
 
 
+// 構造体
+struct PersonalInformation {
+    let familyName: String
+    let lastName: String
+    var age: Int
+    let birthplace: String
+    
+    init(familyName: String, lastName: String, age: Int, birthplace: String) {
+        self.familyName = familyName
+        self.lastName = lastName
+        self.age = age
+        self.birthplace = birthplace
+    }
+    
+    func printName() {
+        print("\(familyName) \(lastName)")
+    }
+    
+    mutating func addAge() { // 構造体のストアドプロパティの変更を含むメソッドにはmutatingが必要
+        age += 1
+    }
+}
+let friend1 = PersonalInformation(familyName: "山田", lastName: "太郎", age: 20, birthplace: "大阪府")
+friend1.printName()
+//friend1.age = 25 // 定数にPersonalInformation型の値を代入している→コンパイルエラー
+
+var friend2 = PersonalInformation(familyName: "山田", lastName: "太郎", age: 20, birthplace: "大阪府")
+friend2.age = 25 // 変数に代入しているのでOK
+friend2.addAge()
+friend2.age
+
+struct PersonalInformation2 {
+    let familyName: String
+    let lastName: String
+    var age: Int
+    let birthplace: String
+    
+    func printName() {
+        print("\(familyName) \(lastName)")
+    }
+}
+let friend3 = PersonalInformation2(familyName: "鈴木", lastName: "次郎", age: 18, birthplace: "東京都") // memberwise initializer
+friend3.age
+
