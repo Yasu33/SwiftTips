@@ -15,6 +15,7 @@
 		1C8E3ACD26710C2700553CCB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C8E3ACB26710C2700553CCB /* LaunchScreen.storyboard */; };
 		1C8E3AD826710C2800553CCB /* Tips_UITableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8E3AD726710C2800553CCB /* Tips_UITableViewTests.swift */; };
 		1C8E3AE326710C2800553CCB /* Tips_UITableViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8E3AE226710C2800553CCB /* Tips_UITableViewUITests.swift */; };
+		1CFAACC92673AA000018707D /* SectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFAACC82673AA000018707D /* SectionTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		1C8E3ADE26710C2800553CCB /* Tips_UITableViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tips_UITableViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C8E3AE226710C2800553CCB /* Tips_UITableViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tips_UITableViewUITests.swift; sourceTree = "<group>"; };
 		1C8E3AE426710C2800553CCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CFAACC82673AA000018707D /* SectionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				1C8E3AC926710C2700553CCB /* Assets.xcassets */,
 				1C8E3ACB26710C2700553CCB /* LaunchScreen.storyboard */,
 				1C8E3ACE26710C2700553CCB /* Info.plist */,
+				1CFAACC82673AA000018707D /* SectionTableViewController.swift */,
 			);
 			path = Tips_UITableView;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			files = (
 				1C8E3AC526710C2300553CCB /* ViewController.swift in Sources */,
 				1C8E3AC126710C2300553CCB /* AppDelegate.swift in Sources */,
+				1CFAACC92673AA000018707D /* SectionTableViewController.swift in Sources */,
 				1C8E3AC326710C2300553CCB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
