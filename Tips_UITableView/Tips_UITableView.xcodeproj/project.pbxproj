@@ -16,6 +16,7 @@
 		1C8E3AD826710C2800553CCB /* Tips_UITableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8E3AD726710C2800553CCB /* Tips_UITableViewTests.swift */; };
 		1C8E3AE326710C2800553CCB /* Tips_UITableViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8E3AE226710C2800553CCB /* Tips_UITableViewUITests.swift */; };
 		1CFAACC92673AA000018707D /* SectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFAACC82673AA000018707D /* SectionTableViewController.swift */; };
+		1CFAACCE267502500018707D /* IMG_2371.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 1CFAACCD267502500018707D /* IMG_2371.JPG */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		1C8E3AE226710C2800553CCB /* Tips_UITableViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tips_UITableViewUITests.swift; sourceTree = "<group>"; };
 		1C8E3AE426710C2800553CCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1CFAACC82673AA000018707D /* SectionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTableViewController.swift; sourceTree = "<group>"; };
+		1CFAACCD267502500018707D /* IMG_2371.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2371.JPG; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		1C8E3ABF26710C2200553CCB /* Tips_UITableView */ = {
 			isa = PBXGroup;
 			children = (
+				1CFAACCD267502500018707D /* IMG_2371.JPG */,
 				1C8E3AC026710C2300553CCB /* AppDelegate.swift */,
 				1C8E3AC226710C2300553CCB /* SceneDelegate.swift */,
 				1C8E3AC426710C2300553CCB /* ViewController.swift */,
@@ -234,6 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CFAACCE267502500018707D /* IMG_2371.JPG in Resources */,
 				1C8E3ACD26710C2700553CCB /* LaunchScreen.storyboard in Resources */,
 				1C8E3ACA26710C2700553CCB /* Assets.xcassets in Resources */,
 				1C8E3AC826710C2300553CCB /* Main.storyboard in Resources */,

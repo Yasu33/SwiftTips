@@ -48,5 +48,9 @@ class SectionTableViewController: UIViewController, UITableViewDataSource, UITab
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return sectionDataList[section]
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(tableDataList[indexPath.section][indexPath.row])
+    }
 
 }
