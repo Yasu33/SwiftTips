@@ -548,3 +548,58 @@ struct PersonalInformation2 {
 let friend3 = PersonalInformation2(familyName: "鈴木", lastName: "次郎", age: 18, birthplace: "東京都") // memberwise initializer
 friend3.age
 
+
+// クラス
+class People {
+    let name: String
+    let age: Int
+    
+    var message: String {
+        return "Hello"
+    }
+    
+    init(age: Int, name: String) {
+        self.name = name
+        self.age = age
+    }
+    
+    func printName() {
+        print(name)
+    }
+}
+let people1 = People(age: 20, name: "花子")
+people1.printName()
+
+class Student: People { //継承
+    var school: String
+    
+    init(age: Int, name: String, school: String) {
+        self.school = school
+        super.init(age: age, name: name)
+    }
+}
+let student1 = Student(age: 18, name: "太郎", school: "学校A")
+student1.printName()
+
+class Employee: People {
+    let office: String
+    
+    override var message: String {
+        return "Hello, I work for \(office)."
+    }
+    
+    init(age: Int, name: String, office: String) {
+        self.office = office
+        super.init(age: age, name: name)
+    }
+    
+    override func printName() {
+        super.printName()
+        print(office)
+    }
+}
+let people2 = People(age: 28, name: "太郎")
+people2.printName()
+let employee1 = Employee(age: 25, name: "次郎", office: "Office A")
+employee1.printName()
+employee1.message
