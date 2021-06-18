@@ -603,3 +603,15 @@ people2.printName()
 let employee1 = Employee(age: 25, name: "次郎", office: "Office A")
 employee1.printName()
 employee1.message
+
+class SuperClass {
+    func overridableMethod() {}
+    
+    final func finalMethod() {}
+}
+
+class SubClass: SuperClass {
+    override func overridableMethod() {}
+    
+//    override func finalMethod() {} // finalキーワードの記述によりコンパイルエラー
+}
