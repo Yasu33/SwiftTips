@@ -615,3 +615,18 @@ class SubClass: SuperClass {
     
 //    override func finalMethod() {} // finalキーワードの記述によりコンパイルエラー
 }
+
+class A {
+    class var className: String { // classキーワードの追加
+        return "A"
+    }
+}
+
+class B: A {
+    override class var className: String {
+        return "B"
+    }
+}
+
+A.className // クラスのインスタンスではなく、クラス自身に紐づく
+B.className
