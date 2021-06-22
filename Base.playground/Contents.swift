@@ -630,3 +630,51 @@ class B: A {
 
 A.className // クラスのインスタンスではなく、クラス自身に紐づく
 B.className
+
+class A2 {
+    class func inheritanceHierarchy() -> String { // classキーワードの追加(クラスメソッド)
+        return "A2"
+    }
+}
+
+class B2: A2 {
+    override class func inheritanceHierarchy() -> String {
+        return super.inheritanceHierarchy() + "<-B2"
+    }
+}
+
+class C2: B2 {
+    override class func inheritanceHierarchy() -> String {
+        return super.inheritanceHierarchy() + "<-C2"
+    }
+}
+
+A2.inheritanceHierarchy()
+B2.inheritanceHierarchy()
+C2.inheritanceHierarchy()
+
+class A3 {
+    class var className: String {
+        return "A3"
+    }
+    
+    static var baseClassName: String {
+        return "A3"
+    }
+}
+
+class B3: A3 {
+    override class var className: String {
+        return "B3"
+    }
+    
+//    override static var baseClassName: String { // スタティックプロパティはoverrideできない→コンパイルエラー
+//        return "B3"
+//    }
+}
+
+A3.className
+B3.className
+
+A3.baseClassName
+B3.baseClassName
